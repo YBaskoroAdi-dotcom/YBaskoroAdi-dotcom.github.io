@@ -1,0 +1,119 @@
+    /* Variabel Warna Tema Truk */
+    :root {
+        --truck-yellow: #ffc107; /* Kuning khas Fuso/Konstruksi */
+        --truck-dark: #1a1a1a;   /* Hitam elegan untuk industri */
+        --truck-body: #f4f4f4;   /* Abu-abu terang untuk background */
+    }
+
+    body {
+        background-color: var(--truck-body);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Animasi CSS */
+    .fade-in-up {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1.5s forwards;
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hero h1 {
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    /* Card Layout yang lebih Modern & Clean */
+    .card {
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+
+    /* Efek hover pada card layanan */
+    .card.hover-scale:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    /* Tombol Custom */
+    .btn-primary {
+        background-color: var(--truck-yellow) !important;
+        border: none !important;
+        color: #000 !important;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        transition: 0.3s;
+    }
+
+    .btn-biru {
+        background-color: #0099ff !important;
+        transform: scale(1.05);
+    }
+
+    .btn-primary:hover {
+        background-color: #e5ad06 !important;
+        transform: scale(1.05);
+    }
+
+    /* Styling Section Pricing agar lebih eksklusif */
+    .pricing-plan {
+        border-radius: 15px;
+        background: #fff;
+    }
+
+    .pricing-plan .card-header {
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: none;
+        padding: 15px;
+    }
+
+    /* Modal Pop-up Styling */
+    .modal-content {
+        border-radius: 20px;
+        border: none;
+    }
+
+    .modal-header {
+        background-color: var(--truck-dark);
+        color: #fff;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: var(--truck-dark) !important;
+        padding: 40px 0 !important;
+    }
+
+    footer a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    footer a:hover {
+        color: var(--truck-yellow) !important;
+    }
+
+    .bi {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.col-md-4:hover .bi {
+    transform: translateY(-5px) rotate(5deg);
+    color: #ffc107; /* Warna kuning saat di-hover */
+}
